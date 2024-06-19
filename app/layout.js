@@ -12,19 +12,9 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-        <h2>testing</h2>
+        <title>testing</title>
       </head>
-      <body className={inter.className}>
-        <header>
-          <h1>My Portfolio</h1>
-          <nav>
-            <a href="#about">About</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
-          </nav>
-        </header>
-        {children}
-      </body>
+      <body className={inter.className}>{children}</body>
     </html>
   );
 }
