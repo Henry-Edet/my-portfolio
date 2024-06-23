@@ -7,6 +7,9 @@ const Section = () => {
     <section
       id="about"
       className="grid grid-cols-2 justify-center items-center border border-purple-800"
+      style={{
+        backgroundImage: `url("profile3.jpg")`,
+      }}
     >
       <div className="flex flex-col py-8 px-2 border-2 border-black rounded-2xl justify-center items-center mt-10">
         <Image
@@ -29,3 +32,7 @@ const Section = () => {
 };
 
 export default Section;
+
+// width: "300px",
+//         height: "auto",
+//         borderRadius: "50%",
