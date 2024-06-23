@@ -1,40 +1,46 @@
-// import AnimatedPicture from "@/components/AnimatedImg";
-import henry from "@/public/henry.JPG";
-import { px } from "framer-motion";
-import Image from "next/image";
+import Section from "@/components/Section";
+import { MdKeyboardDoubleArrowDown } from "react-icons/md";
 
 export default function Home() {
   return (
     <main className="border border-green-800">
-      <header className="flex flex-row justify-around items-center text-black ">
-        {/* <AnimatedPicture /> */}
-        <div>
-          <h1>Engr. Henry Edet</h1>
-          <h6>
-            <em className="text-sm">
-              Software Engineer & Cybersecurity Analyst
-            </em>
-          </h6>
-        </div>
-        <nav className="flex justify-between gap-8">
-          <a href="#about">About</a>
-          <a href="#projects">Projects</a>
-          <a href="#contact">Contact</a>
-        </nav>
-      </header>
       <section
-        id="about"
-        className="grid grid-cols-2 justify-center items-center border-8 border-purple-800"
+        className="ring-8 ring-pink-500 h-[30rem] text-white"
+        style={{ backgroundImage: `url("profile2.jpg")` }}
       >
-        <div>
-          <Image
-            src="/henry.JPG"
-            alt="profile photo"
-            width={216}
-            height={288}
-          />
+        <header className=" ">
+          <div className="flex flex-row justify-between items-center w-screen h-[8rem] px-8 ring-2 ring-red-700">
+            <div>
+              <h1>Engr. Henry Edet</h1>
+              <h6>
+                <em className="text-sm">
+                  Software Engineer & Cybersecurity Analyst
+                </em>
+              </h6>
+            </div>
+            <nav className="flex justify-between gap-8">
+              <a href="#about">About</a>
+              <a href="#projects">Projects</a>
+              <a href="#contact">Contact</a>
+            </nav>
+          </div>
+        </header>
+        <div className="flex flex-col justify-around items-center py-4">
+          <h1 className="text-[8rem]">Welcome</h1>
+          <br />
+          <p>
+            <em>Imagination is the start of the future...</em>
+          </p>
+
+          <h6>Featured Projects</h6>
+          <MdKeyboardDoubleArrowDown />
         </div>
       </section>
+
+      <Section />
+      <Section />
+      <Section />
+      <Section />
     </main>
   );
 }
