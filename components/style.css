@@ -1,4 +1,4 @@
-.backgroundImg {
+/* .backgroundImg {
   background-color: #075f04;
   background-image: url("/darkCloth.jpg");
   background-repeat: no-repeat;
@@ -15,4 +15,74 @@
   background-blend-mode: multiply;
   padding-top: 100px;
   padding-bottom: 100px;
+  position: relative;
+  overflow: hidden;
+} */
+
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: rgb(0, 0, 0, 0.35);
+  color: white;
+  margin-bottom: 100px;
+  position: relative;
+  overflow: hidden;
+  min-height: 50vh;
+}
+
+.video-bg {
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.header {
+  width: 90%;
+  margin: 0 auto;
+  z-index: 50;
+  position: fixed;
+  top: 0;
+}
+
+nav li {
+  position: relative;
+  padding-top: 12px;
+}
+
+nav a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  display: block;
+  width: 0%;
+  height: 2px;
+  background: #f5f5f0;
+  transition: all 0.5s ease-in-out;
+}
+
+nav a:hover::before {
+  width: 100%;
+}
+
+.arrow {
+  animation: bouncearrow 1.5s infinite ease;
+  position: relative;
+}
+
+@keyframes bouncearrow {
+  0% {
+    top: 0px;
+  }
+  50% {
+    top: 20px;
+  }
+  100% {
+    top: 0px;
+  }
 }
