@@ -1,17 +1,15 @@
 import Section from "@/components/Section";
 import { MdKeyboardDoubleArrowDown } from "react-icons/md";
 import Header from "@/components/Header";
+import "@/components/style.css";
 
 export default function Home() {
   return (
     <div>
-      <div
-        className="flex flex-col h-[30rem] text-white"
-        style={{ backgroundImage: `url("profile2.jpg")` }}
-      >
+      <div className="headerImg flex flex-col h-[30rem] text-white border-2 border-red-600">
         <Header />
 
-        <div className="flex flex-col justify-around items-center mt-[9rem]">
+        <div className="flex flex-col justify-around items-center">
           <h1 className="text-[8rem]">Welcome</h1>
           <br />
           <p>

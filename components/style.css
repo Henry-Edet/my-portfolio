@@ -1,0 +1,18 @@
+.backgroundImg {
+  background-color: #075f04;
+  background-image: url("/darkCloth.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.headerImg {
+  background-color: #afd580;
+  background-image: url("/profile2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: multiply;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
