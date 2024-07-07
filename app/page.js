@@ -2,6 +2,8 @@ import Section from "@/components/Section";
 import { MdKeyboardDoubleArrowDown } from "react-icons/md";
 import Header from "@/components/Header";
 import "@/components/style.css";
+import { About, Projects, Contact, Blog, Footer } from "@/components/data";
+import classes from "@/components/style.css";
 
 export default function Home() {
   return (
@@ -13,7 +15,7 @@ export default function Home() {
         </video>
 
         <div className="flex flex-col justify-around items-center mt-16 py-[1rem] px-[5rem]">
-          <h1 className="text-[6rem]">Welcome</h1>
+          <h1 className="text-[8rem]">Welcome</h1>
           <br />
           <p>
             <em>Imagination is the start of the future...</em>
@@ -26,67 +28,33 @@ export default function Home() {
       </div>
 
       {/*  */}
-      <main className="">
-        <Section />
-        <Section />
-        <Section />
-        <Section />
+      <main className={classes.section}>
+        <Section
+          id="About"
+          title={About.title}
+          description={About.description}
+        />
+
+        <Section
+          id="Projects"
+          title={Projects.title}
+          description={Projects.description}
+        />
+
+        <Section
+          id="Contact"
+          title={Contact.title}
+          description={Contact.description}
+        />
+
+        <Section id="Blog" title={Blog.title} description={Blog.description} />
+
+        <Section
+          id="Footer"
+          title={Footer.title}
+          description={Footer.description}
+        />
       </main>
     </body>
   );
-}
-
-// div className="headerImg flex flex-col h-[30rem] text-white border-2 border-red-600">
-//         // {/* <Header /> */}
-
-//         <div className="flex flex-col justify-around items-center">
-//           <h1 className="text-[8rem]">Welcome</h1>
-//           <br />
-//           <p>
-//             <em>Imagination is the start of the future...</em>
-//           </p>
-
-//           <div className="flex flex-col justify-between items-center gap-5 mt-4">
-//             <h6>Featured Projects</h6>
-//             <MdKeyboardDoubleArrowDown />
-//           </div>
-//         </div>
-//       </div>
-{
-  /* <section
-  className="h-[30rem] text-white border-5 border-yellow-200"
-  style={{ backgroundImage: `url("profile2.jpg")` }}
->
-  <div className="flex flex-col">
-    <header className="fixed top-0 w-full z-50 border-2 border-red-600">
-      <div className="flex flex-row justify-between items-center h-[8rem] px-8">
-        <div>
-          <h1>Engr. Henry Edet</h1>
-          <h6>
-            <em className="text-sm">
-              Software Engineer & Cybersecurity Analyst
-            </em>
-          </h6>
-        </div>
-        <nav className="flex justify-between gap-8">
-          <a href="#about">About</a>
-          <a href="#projects">Projects</a>
-          <a href="#contact">Contact</a>
-        </nav>
-      </div>
-    </header>
-  </div>
-  <div className="flex flex-col justify-around items-center border-2 border-yellow-600">
-    <h1 className="text-[8rem]">Welcome</h1>
-    <br />
-    <p>
-      <em>Imagination is the start of the future...</em>
-    </p>
-
-    <div className="flex flex-col justify-between items-center gap-5 mt-4">
-      <h6>Featured Projects</h6>
-      <MdKeyboardDoubleArrowDown />
-    </div>
-  </div>
-</section>; */
 }

@@ -1,23 +1,12 @@
-/* .backgroundImg {
+.backgroundImg {
   background-color: #075f04;
-  background-image: url("/darkCloth.jpg");
+  background-image: url("/blurredEiffel.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   padding-top: 100px;
   padding-bottom: 100px;
+  /* border: 2px solid red; */
 }
-
-.headerImg {
-  background-color: #afd580;
-  background-image: url("/profile2.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-blend-mode: multiply;
-  padding-top: 100px;
-  padding-bottom: 100px;
-  position: relative;
-  overflow: hidden;
-} */
 
 .hero {
   display: flex;
@@ -26,10 +15,10 @@
   text-align: center;
   background: rgb(0, 0, 0, 0.35);
   color: white;
-  margin-bottom: 100px;
   position: relative;
   overflow: hidden;
-  min-height: 50vh;
+  min-height: 80vh;
+  /* border: 2px solid rgb(255, 255, 255); */
 }
 
 .video-bg {
@@ -85,4 +74,27 @@ nav a:hover::before {
   100% {
     top: 0px;
   }
+}
+
+/* className="backgroundImg grid grid-cols-2 justify-center items-center" */
+.section {
+  display: grid;
+  grid-column: 2;
+  justify-content: center;
+  align-items: center;
+  background-image: url("/houseImg1.jpg.jpg");
+}
+
+.profile-image {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  /* margin: 0 auto;
+  margin-top: 100px; */
+  object-fit: cover;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  opacity: 0.8;
+  mix-blend-mode: multiply;
 }
