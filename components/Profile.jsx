@@ -5,12 +5,18 @@ import Image from "next/image";
 import henry from "@/public/newFine.png";
 import { FaInstagram } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa6";
-import "@/components/Profile-gsap";
 
-const Photo = () => {
+const Photo = ({ name, title }) => {
   return (
     <div className="w-full h-full relative">
-      <motion.div>
+      <motion.div
+        className="profile-card"
+        whileHover={{ scale: 1.1 }}
+        whileTap={{ scale: 0.9 }}
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5 }}
+      >
         <div className="person">
           <div className="person__container">
             <div className="avatar">
@@ -24,11 +30,9 @@ const Photo = () => {
               />
             </div>
             <div className="person__details">
-              <h1>Engr. Henry Edet</h1>
+              <h1>{name}</h1>
             </div>
-            <div className="person__role">
-              Software Engineer & Cybersecurity Analyst
-            </div>
+            <div className="person__role">{title}</div>
 
             <div className="card-footer">
               <div className="social-buttons">

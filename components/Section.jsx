@@ -1,5 +1,6 @@
 import "@/components/style.css";
 import Profile from "@/components/Profile";
+// import SplitText from "@/components/Textanimate";
 
 const Section = () => {
   return (
@@ -8,8 +9,8 @@ const Section = () => {
       className="backgroundImg grid grid-cols-2 justify-center items-center"
     >
       <Profile />
-      <div className="text-white">
-        <h2>About</h2>
+      <div className="text-white about-me">
+        <h2>About Me</h2>
         <p>
           I am a software engineer and cybersecurity analyst with a passion for
           learning and problem solving; with 2 years of experience in designing
