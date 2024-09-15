@@ -1,4 +1,4 @@
-import Section from "@/components/Section";
+import AboutSection from "@/components/AboutSection";
 import { MdKeyboardDoubleArrowDown } from "react-icons/md";
 import Header from "@/components/Header";
 import "@/components/style.css";
@@ -29,31 +29,7 @@ export default function Home() {
 
       {/*  */}
       <main className={classes.section}>
-        <Section
-          id="About"
-          title={About.title}
-          description={About.description}
-        />
-
-        <Section
-          id="Projects"
-          title={Projects.title}
-          description={Projects.description}
-        />
-
-        <Section
-          id="Contact"
-          title={Contact.title}
-          description={Contact.description}
-        />
-
-        <Section id="Blog" title={Blog.title} description={Blog.description} />
-
-        <Section
-          id="Footer"
-          title={Footer.title}
-          description={Footer.description}
-        />
+        <AboutSection id="About" />
       </main>
     </body>
   );

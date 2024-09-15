@@ -72,97 +72,22 @@ nav a:hover::before {
 
 .backgroundImg {
   background-color: #075f04;
-  background-image: url("/darkCloth.jpg");
+  background-image: url("/aboutbck.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   padding-top: 100px;
   padding-bottom: 100px;
   min-height: 100vh;
+  /* width: 100vw; */
 }
 
-.section {
-  display: grid;
-  grid-column: 2;
-  justify-content: center;
-  align-items: center;
+.aboutImg {
+  height: fit-content;
+  margin-top: 180px;
 }
 
-.person {
-  position: relative;
-  width: 360px;
-  height: 450px;
-  background-color: #fff;
+.imagediv {
   display: flex;
-  top: 20px;
-  flex-direction: column;
-  border-radius: 10px;
-  padding-top: 25px;
-  cursor: pointer;
-  justify-content: space-between;
-  padding-bottom: 15px;
-  margin-inline: auto;
-}
-
-.person__container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.avatar {
-  width: 200px;
-  height: 250px;
-  border-radius: 50%;
-  position: relative;
-}
-
-.profile-image {
-  border-radius: 50%;
-  overflow: hidden;
-  /* border: 5px solid rgba(0, 0, 0, 0.1); */
-}
-
-.avatar .profile-image {
-  width: 100vw;
-  height: 100%;
-  object-fit: contain;
-  /* border-radius: 50%; */
-}
-
-.person__details {
-  font-size: 28px;
-  font-weight: 500;
-}
-
-.person__role {
-  color: #6d6d6d;
-}
-
-.card-footer {
-  width: 85%;
-  height: 90px;
-  margin: 0 auto;
-  display: flex;
-  align-items: center;
-}
-
-.social-buttons {
   width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.social-buttons button {
-  width: 40px;
-  height: 40px;
-  border: 1px solid transparent;
-  border-radius: 50%;
-  font-size: 23px;
-  margin: 0 20px;
-}
-
-.about-me h2 {
-  font-size: 32px;
-  font-weight: 600;
+  gap: 16rem;
 }
